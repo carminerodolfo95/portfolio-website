@@ -1,0 +1,627 @@
+/* CSS Custom Properties */
+:root 
+{
+    --font-family: 'Poppins', sans-serif;
+    --font-family-alt: 'Anton', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    
+    --color-background-light: #f2f2f2;
+    --color-background-dark: #0d1b1e;
+    --color-accent: #EF8354;
+    --color-text-default-light: #f2f2f2;
+    --color-text-default-dark: #0d1b1e;
+    --color-text-special: #afafaf;
+
+}
+
+/* Set font size and line height */
+h1 {
+    color: var(--color-accent) !important;
+    text-align: center !important;
+    font-family: var(--font-family-alt);
+    padding-top: 4rem;
+    font-size: clamp(3rem, 12.727vw + 0.455rem, 10rem) !important;
+    line-height: clamp(3.6rem, 15.273vw + 0.545rem, 12rem) !important;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 2.727vw + 0.955rem, 3rem) !important;
+    line-height: clamp(1.8rem, 3.273vw + 1.145rem, 3.6rem) !important; 
+    font-family: var(--font-family-alt);
+    color: var(--color-accent);
+    text-align: end;
+}
+
+h3 {
+    font-size: clamp(1rem, 1.818vw + 0.636rem, 2rem) !important;
+    line-height: clamp(1.2rem, 2.182vw + 0.764rem, 2.4rem) !important;
+    color: var(--color-accent);
+}
+
+h4 {
+    font-size: clamp(0.75rem, 1.364vw + 0.477rem, 1.5rem) !important;
+    line-height: clamp(0.9rem, 1.636vw + 0.573rem, 1.8rem) !important;
+    color: var(--color-text-default-light);
+}
+
+h5, button {
+    font-size: clamp(0.625rem, 0.682vw + 0.489rem, 1rem) !important;
+    line-height: clamp(0.75rem, 1.182vw + 0.514rem, 1.4rem) !important;
+    color: var(--color-text-special);
+    font-weight: var(--font-weight-light) !important;
+    text-align: end;
+}
+
+p, a {
+    font-size: clamp(0.625rem, 0.682vw + 0.489rem, 1rem) !important;
+    line-height: clamp(0.75rem, 1.182vw + 0.514rem, 1.4rem) !important;
+    color: var(--color-text-default-light);
+}
+
+
+
+
+
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: var(--font-family);
+    line-height: auto;
+}
+
+/* Set body background color */
+body {
+    background-color: var(--color-background-dark) !important;
+    line-height: auto;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul, li {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Set Link and Button */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+}
+
+.button:focus {
+    border: none;
+    outline: none;
+}
+
+button:focus{
+    outline:none !important;
+}
+
+
+
+/* --------------------------------HEADER----------------------------------- */
+
+#header {
+    background-color: var(--color-background-dark);
+}
+
+.header_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-background-dark);
+}
+
+.logo_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+ul {
+    margin-bottom: 0 !important;
+}
+
+ul li {
+    display: inline-block;
+    padding-left: 16px;
+}
+
+ul li a {
+    color: var(--color-text-default-light);
+    transition: 1s ease-out;
+}
+
+ul li a:hover, ul li a.active {
+    text-decoration: none;
+    color: var(--color-accent);
+    transition: 0.5s ease-in;
+}
+
+.primary {
+    padding: 10px 20px;
+    background-color: var(--color-background-light);
+    color: var(--color-text-default-dark);
+    border: 0;
+    border-radius: 10px;
+    transition: 1s ease-out;
+}
+
+.primary:hover {
+    background-color: var(--color-accent);
+    transition: 0.5 ease-in;
+}
+
+/* --------------------------------HEADER----------------------------------- */
+
+
+
+
+/*ABOUT SECTION*/
+
+
+/* --------------------------------HERO----------------------------------- */
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* --------------------------------HERO----------------------------------- */
+
+
+
+/* --------------------------------ABOUT----------------------------------- */
+
+.about {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas:
+    "item-1 item-2 item-3"
+    "item-4 item-5 item-6"
+    "item-7 item-8 item-6";
+    gap: 20px;
+    margin: 100px auto;
+}
+
+.item {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item-1 {
+    grid-area: item-1;
+    padding-bottom: 0px;
+    background-color: var(--color-background-dark);
+    display: flex;
+    align-items: end;
+}
+
+.item-2 {
+    grid-area: item-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-background-light);
+    color: var(--color-text-default-dark);
+}
+
+.item-3 {
+    grid-area: item-3;
+    color: var(--color-text-default-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-background-light);
+}
+
+.item-4 {
+    grid-area: item-4;
+    color: var(--color-text-default-dark);
+    background-color: var(--color-background-light);
+}
+
+.item-5 {
+    grid-area: item-5;
+    background-color: var(--color-accent);
+    color: var(--color-text-default-light);
+}
+
+.item-6 {
+    grid-area: item-6;
+    color: var(--color-text-default-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-background-light);
+}
+
+.item-7 {
+    grid-area: item-7;
+    background-color: var(--color-background-light);
+    color: var(--color-text-default-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item-8 {
+    grid-area: item-8;
+    color: var(--color-text-default-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-background-light);
+}
+
+.activity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tool {
+    background-color: var(--color-accent);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-brands{
+    color:var(--color-background-dark);
+}
+
+/* --------------------------------ABOUT----------------------------------- */
+
+
+
+/* --------------------------------SERVICES----------------------------------- */
+
+.introduction {
+    margin: 200px auto 50px auto;
+}
+
+.service {
+    border-bottom: 1px solid var(--color-text-special);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --------------------------------SERVICES----------------------------------- */
+
+/*ABOUT SECTION*/
+
+
+/*WORK SECTION*/
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image {
+    height: 400px;
+    width: 400px;
+    transition: 1s ease-out;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image:hover {
+    transform: scale(0.9);
+    transition: 0.5s ease-in;
+}
+
+.container-button {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.secondary:hover {
+    background-color: #EF8354;
+}
+
+.secondary {
+    color: var(--color-background-dark);
+    border: 0px;
+    padding: 10px 30px;
+    background-color: var(--color-background-light);
+    border-radius: 10px;
+    transition: 2s ease-out;
+    background-color: var(--color-accent);
+}
+
+/*WORK SECTION*/
+
+
+/*CONTACT SECTION*/
+
+/* --------------------------------CONTACT----------------------------------- */
+
+#contact {
+    background-color: var(--color-background-light);
+    margin-top: 100px;
+}
+
+.contact {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--color-background-dark);
+}
+
+.contact_form {
+    margin-top: 100px;
+}
+
+.contact-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.maxi-button {
+    height: 100%;
+    width:max-content;
+    background-color: var(--color-background-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maxi-button:hover {
+    color: var(--color-accent);
+    transition: 1s;
+}
+
+.contact-inputs {
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 400;
+    color: var(--color-text-default-dark);
+    border-radius: 10px;
+    border: 1px solid var(--color-background-dark);
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--color-background-dark);
+}
+
+.contact-inputs::placeholder {
+    color: var(--color-text-special);
+}
+
+.contact-left button {
+    padding: 10px 40px;
+    color: var(--color-text-default-light);
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0D1B1E;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-left button i {
+    height: 100%;
+}
+
+/* --------------------------------CONTACT----------------------------------- */
+
+/* --------------------------------FOOTER----------------------------------- */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: end;
+    background-color: var(--color-background-light);
+}
+
+.social-group {
+    display: flex;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.social-group a {
+    text-decoration: none;
+    color: var(--color-text-default-light);
+}
+
+.social-group a:hover {
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.privacy p {
+    color: var(--color-text-default-dark);
+}
+
+/* --------------------------------FOOTER----------------------------------- */
+
+/*CONTACT SECTION*/
+
+
+/* Media queries */
+
+@media (max-width:768px) {
+    h2, h5 {
+        text-align: center;
+    }
+    ul {
+        display: none;
+    }
+    .hero {
+        height: auto;
+        margin-top: 100px;
+    }
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+        "item-1"
+        "item-5"
+        "item-7" 
+        "item-3" 
+        "item-6"
+        "item-8"
+        "item-2"
+        "item-4";
+    }
+    .image {
+        height: auto;
+        width: auto;
+    }
+    .container-button {
+        justify-content: center;
+    }
+    .contact_content {
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+    }
+    .contact-left {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 20px;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .privacy {
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .primary {
+        display: none;
+    }
+    .about {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "item-5 item-1"
+        "item-7 item-2"
+        "item-3 item-6" 
+        "item-8 item-4";
+    }
+    .image {
+        height: auto;
+        width: auto;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .privacy {
+        text-align: center;
+    }
+}
+
+@media (min-width:993px) {
+    .primary {
+        display: none;
+    }
+}
+
+/* Media queries */
