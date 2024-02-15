@@ -41,13 +41,13 @@ h3 {
     color: var(--color-accent);
 }
 
-h4 {
+h4, button {
     font-size: clamp(0.75rem, 1.364vw + 0.477rem, 1.5rem) !important;
     line-height: clamp(0.9rem, 1.636vw + 0.573rem, 1.8rem) !important;
     color: var(--color-text-default-light);
 }
 
-h5, button {
+h5 {
     font-size: clamp(0.625rem, 0.682vw + 0.489rem, 1rem) !important;
     line-height: clamp(0.75rem, 1.182vw + 0.514rem, 1.4rem) !important;
     color: var(--color-text-special);
@@ -176,7 +176,7 @@ ul li a:hover, ul li a.active {
 }
 
 .primary {
-    padding: 10px 20px;
+    padding: 16px 32px;
     background-color: var(--color-background-light);
     color: var(--color-text-default-dark);
     border: 0;
@@ -398,6 +398,7 @@ ul li a:hover, ul li a.active {
     display: flex;
     justify-content: end;
     margin-top: 30px;
+    height: 100%;
 }
 
 .secondary:hover {
@@ -407,7 +408,7 @@ ul li a:hover, ul li a.active {
 .secondary {
     color: var(--color-background-dark);
     border: 0px;
-    padding: 10px 30px;
+    padding: 16px 32px;
     background-color: var(--color-background-light);
     border-radius: 10px;
     transition: 2s ease-out;
@@ -448,20 +449,6 @@ ul li a:hover, ul li a.active {
     gap: 10px;
 }
 
-.maxi-button {
-    height: 100%;
-    width:max-content;
-    background-color: var(--color-background-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.maxi-button:hover {
-    color: var(--color-accent);
-    transition: 1s;
-}
-
 .contact-inputs {
     height: 50px;
     border: none;
@@ -485,9 +472,10 @@ ul li a:hover, ul li a.active {
 }
 
 .contact-left button {
+    height: 100%;
     padding: 10px 40px;
     color: var(--color-text-default-light);
-    gap: 10px;
+    gap: 5px;
     border: none;
     border-radius: 10px;
     background-color: #0D1B1E;
@@ -495,9 +483,6 @@ ul li a:hover, ul li a.active {
     width: 100%;
 }
 
-.contact-left button i {
-    height: 100%;
-}
 
 /* --------------------------------CONTACT----------------------------------- */
 
