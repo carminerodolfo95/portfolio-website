@@ -14,6 +14,32 @@
 
 <body>
 
+    <div id="header" class="fixed-top container-fluid">
+    <header class="header2 container-xl">
+        <div class="logo">
+            <a><img src="images/logo.svg" alt="logo"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="active">Works</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <!--
     <header>
         <div id="header" class="fixed-top container-fluid">
         <div class="header_content py-3 container-xl px-3">
@@ -31,6 +57,7 @@
         </div>
         </div>
     </header>
+-->
 
     <section class="section" id="about">
 
@@ -107,9 +134,13 @@
         </div>
     </section>
 
-
-
-
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 
     <script src="https://kit.fontawesome.com/595d534f10.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>

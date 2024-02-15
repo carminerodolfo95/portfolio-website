@@ -1,3 +1,5 @@
+const { Navbar } = require("react-bootstrap");
+
 const navLinkEls = document.querySelectorAll('.nav_link');
 const sectionEls = document.querySelectorAll('.section');
 
@@ -16,3 +18,4 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
