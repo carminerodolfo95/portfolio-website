@@ -40,7 +40,7 @@
         </header>
         </div>
 
-    <section class="project_content">
+    <section class="project_content pb-5">
         <div class="container-xl project-hero">
             <h1>Orizon</h1>
             <h5>Branding | Agenzia di viaggi sostenibili</h5>
@@ -50,25 +50,141 @@
                 <img src="images/Light banner_3000.jpg">
             </div>
             <div class="project-description">
-                <div class="year">
-                    <h5>Year</h5>
-                    <h3>2023</h3>
+                <div class="year-info">
+                    <h5>Anno</h5>
+                    <h4>2023</h4>
                 </div>
-                <div class="product">
-                    <h5>Product</h5>
-                    <h3>Branding</h3>
+                <div class="product-info">
+                    <h5>Prodotto</h5>
+                    <h4>Branding</h4>
+                </div>
+                <div class="industry-info">
+                    <h5>Settore</h5>
+                    <h4>Viaggi</h4>
                 </div>
                 <div class="comment">
                     <h5>Description</h5>
-                    <h4>Non si tratta di una semplice agenzia. Orizon organizza programmi personalizzati volti a vivere i luoghi da viaggiatore, in armonia con la natura e la popolazione. I viaggi di Orizon sono intrisi di scambi equi con le comunità del luogo, per un’avventura che rigenera chi la vive e il luogo che vi ospita.</h4>
+                    <p>Non si tratta di una semplice agenzia. Orizon organizza programmi personalizzati volti a vivere i luoghi da viaggiatore, in armonia con la natura e la popolazione. I viaggi di Orizon sono intrisi di scambi equi con le comunità del luogo, per un’avventura che rigenera chi la vive e il luogo che vi ospita.</p>
+                    <a href="#"><p>Download PDF</p></a>
                 </div>
             </div>
+        </div>
+
+        <div class="steps container-xl mt-5">
+            <h5>STEPS</h5>
+            <div class="step">
+                <h2>LOGO DESIGN</h2>
+            </div>
+            <div class="step">
+                <h2>BRAND COLORS</h2>
+            </div>
+            <div class="step">
+                <h2>TYPOGRAPHY</h2>
+            </div>
+            <div class="step">
+                <h2>MOCKUP</h2>
+            </div>
+        </div>
+
+        <div class="mockup_content container-xl mt-5">
+            <div class="mockup-bottle mockup">
+                <img src="images/aluminium-water-bottle-mockup.jpg">
+            </div>
+            <div class="mockup-logo mockup">
+                <img src="images/Mockup-logo.jpg">
+            </div>
+            <div class="mockup-shirt mockup">
+                <img src="images/T-shirt mockup.jpg">
+            </div>
+            <div class="mockup-card mockup">
+                <img src="images/card-mockup.jpg">
+            </div>
+            <div class="mockup-brochure mockup">
+                <img src="images/Folder and Brochures Free Mockup.jpg">
+            </div>
+        </div>
+
+        <div class="introduction container-xl">
+            <h4>MORE WORKS</h4>
+        </div>
+        <div class="container-xl projects">
+            <a><div class="project">
+                <div class="image">
+                    <img src="images/lse.jpg">
+                </div>
+                <div class="description">
+                    <div class="text"><h4>Latent Space Explorer</h4><h5>#Website</h5></div>
+                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
+                </div>
+            </div></a>
+            <a><div class="project">
+                <div class="image">
+                    <img src="images/body.jpg">
+                </div>
+                <div class="description">
+                    <div class="text"><h4>Dott.ssa Santoro</h4><h5>#Social Media</h5></div>
+                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
+                </div>
+            </div></a>
+            <a><div class="project">
+                <div class="image">
+                    <img src="images/banner.jpg">
+                </div>
+                <div class="description">
+                    <div class="text"><h4>Dott.ssa Santoro</h4><h5>#Banner</h5></div>
+                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
+                </div>
+            </div></a>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="contact container-xl py-5">
+            <h1>Insieme<span class="light"> possiamo creare qualcosa di straordinario.</span></h1>
+            <div class="contact_form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="field"><input type="hidden" name="access_key" value="8f948b30-b9de-4432-b879-c96880f9bb8c">
+                    <input type="text" name="name" placeholder="Il tuo nome" class="contact-inputs" required></input>
+                    <input type="email" name="email" placeholder="La tua email" class="contact-inputs" required></input>
+                    <textarea name="message" placeholder="Messaggio" class="contact-inputs" required></textarea></div>
+                    <div><button class="maxi-button" type="submit">Invia</button></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer container-xl">
+        <div class="social-group">
+            <div class="social">
+                <a href="#"><h4>Instagram</h4></a>
+            </div>
+            <div class="social">
+                <a href="#"><h4>Linkedin</h4></a>
+            </div>
+            <div class="social">
+                <a href="#"><h4>Github</h4></a>
+            </div>
+        </div>
+        <div class="privacy">
+            <p>Progettato e sviluppato da Carmine Rodolfo Tagliafierro</p>
+            <p>© 2024 All rights reserved</p>
+        </div>
         </div>
     </section>
 
 
+            
 
 
 
 
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/595d534f10.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>

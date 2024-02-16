@@ -32,13 +32,13 @@ h2 {
     line-height: clamp(1.8rem, 3.273vw + 1.145rem, 3.6rem) !important; 
     font-family: var(--font-family-alt);
     color: var(--color-accent);
-    text-align: end;
+    text-align: left;
 }
 
 h3 {
     font-size: clamp(1rem, 1.818vw + 0.636rem, 2rem) !important;
     line-height: clamp(1.2rem, 2.182vw + 0.764rem, 2.4rem) !important;
-    color: var(--color-accent);
+    color: var(--color-text-default-dark);
 }
 
 h4, button {
@@ -52,7 +52,7 @@ h5 {
     line-height: clamp(0.75rem, 1.182vw + 0.514rem, 1.4rem) !important;
     color: var(--color-text-special);
     font-weight: var(--font-weight-light) !important;
-    text-align: end;
+    text-align: left;
 }
 
 p, a {
@@ -247,7 +247,7 @@ ul li a:hover, ul li a.active {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--color-background-light);
+    background-color: var(--color-text-special);
     color: var(--color-text-default-dark);
 }
 
@@ -257,7 +257,7 @@ ul li a:hover, ul li a.active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--color-background-light);
+    background-color: var(--color-text-special);
 }
 
 .item-4 {
@@ -278,12 +278,12 @@ ul li a:hover, ul li a.active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--color-background-light);
+    background-color: var(--color-text-special);
 }
 
 .item-7 {
     grid-area: item-7;
-    background-color: var(--color-background-light);
+    background-color: var(--color-text-special);
     color: var(--color-text-default-dark);
     display: flex;
     flex-direction: column;
@@ -297,7 +297,7 @@ ul li a:hover, ul li a.active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--color-background-light);
+    background-color: var(--color-text-special);
 }
 
 .activity {
@@ -379,7 +379,6 @@ ul li a:hover, ul li a.active {
 .image {
     height: 400px;
     width: 400px;
-    transition: 1s ease-out;
 }
 
 .image img {
@@ -387,9 +386,10 @@ ul li a:hover, ul li a.active {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: 0.5s ease-out;
 }
 
-.image:hover {
+.image img:hover {
     transform: scale(0.9);
     transition: 0.5s ease-in;
 }
@@ -409,10 +409,9 @@ ul li a:hover, ul li a.active {
     color: var(--color-background-dark);
     border: 0px;
     padding: 16px 32px;
-    background-color: var(--color-background-light);
     border-radius: 10px;
     transition: 2s ease-out;
-    background-color: var(--color-accent);
+    background-color: var(--color-background-light);
 }
 
 /*WORK SECTION*/
@@ -423,8 +422,12 @@ ul li a:hover, ul li a.active {
 /* --------------------------------CONTACT----------------------------------- */
 
 #contact {
-    background-color: var(--color-background-light);
-    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.light {
+    color: var(--color-text-default-light);
+    font-family: "Anton", sans-serif;
 }
 
 .contact {
@@ -474,13 +477,19 @@ ul li a:hover, ul li a.active {
 .contact-left button {
     height: 100%;
     padding: 10px 40px;
-    color: var(--color-text-default-light);
+    color: var(--color-text-default-dark);
     gap: 5px;
     border: none;
     border-radius: 10px;
-    background-color: #0D1B1E;
+    background-color: var(--color-text-default-light);
     cursor: pointer;
     width: 100%;
+    transition: 1s ease-out;
+}
+
+.contact-left button:hover {
+    background-color: var(--color-accent);
+    transition: 1s ease-in;
 }
 
 
@@ -493,7 +502,7 @@ ul li a:hover, ul li a.active {
     justify-content: space-between;
     align-items: center;
     text-align: end;
-    background-color: var(--color-background-light);
+    border-top: 1px solid var(--color-text-special);
 }
 
 .social-group {
@@ -502,13 +511,14 @@ ul li a:hover, ul li a.active {
     margin: 40px 0;
 }
 
-.social-group a {
-    text-decoration: none;
+.social-group .social a {
     color: var(--color-text-default-light);
+    transition: 1s ease-out;
 }
 
 .social-group a:hover {
-    text-decoration: none;
+    color: var(--color-accent) !important;
+    transition: 1s ease-in;
 }
 
 .social {
@@ -518,7 +528,7 @@ ul li a:hover, ul li a.active {
 }
 
 .privacy p {
-    color: var(--color-text-default-dark);
+    color: var(--color-text-default-light);
 }
 
 /* --------------------------------FOOTER----------------------------------- */
@@ -703,7 +713,9 @@ ul li a:hover, ul li a.active {
 }
 
 
-
+.projects h4 {
+    color: var(--color-text-default-dark);
+}
 
 .project_content {
     background-color: var(--color-background-light);
@@ -711,21 +723,33 @@ ul li a:hover, ul li a.active {
 .project_content h1 {
     color: var(--color-text-default-dark) !important;
 }
+.project_content p {
+    color: var(--color-text-default-dark);
+}
+.project_content a {
+    text-decoration: underline;
+    text-decoration-color: var(--color-background-dark);
+    ;
+}
 .project-hero {
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0;
 }
 .project-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.project-intro h5 {
+    color: var(--color-accent);
+}
 .project-intro h4 {
-    color: var(--color-text-default-dark);
+    font-weight: var(--font-weight-regular);
+}
+.project-intro h3 {
     font-weight: var(--font-weight-regular);
 }
 .project-image {
@@ -741,41 +765,91 @@ ul li a:hover, ul li a.active {
 .project-description {
     display: grid;
     margin-top: 50px;
-    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr 4fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "year product comment";
+    "year product industry comment";
+    gap: 20px;
 }
-.year {
+.year-info {
     grid-area: year;
 }
-.product {
+.product-info {
     grid-area: product;
+}
+.industry-info {
+    grid-area: industry;
 }
 .comment {
     grid-area: comment;
-    padding-left: 50px;
 }
-.year, .product, .comment {
+.year-info, .product-info, .industry-info, .comment {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
     justify-content: flex-start;
+    border-radius: 10px;
+    padding: 20px;
+}
+.year-info, .product-info, .industry-info {
+    background-color: var(--color-background-dark);
+    align-items:center;
+
 }
 @media (max-width:768px) {
     .project-description {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 4fr;
+        grid-template-rows: 1fr 1fr 1fr 2fr;
         grid-template-areas:
         "year"
         "product"
+        "industry"
         "comment";
         gap: 20px;
-    }
-    .comment {
-        padding-left: 0;
     }
     .project-description {
         margin-top: 20px;
     }
+}
+
+
+
+
+
+
+.step {
+    border-bottom: 1px solid var(--color-text-special);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+.mockup_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.mockup  {
+    max-height: 700px;
+    width: 100%;
+}
+.mockup img{
+    border-radius: 10px;
+    max-height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.project_content .introduction h4 {
+    color: var(--color-text-default-dark);
 }
