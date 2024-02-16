@@ -813,6 +813,9 @@ ul li a:hover, ul li a.active {
     .project-description {
         margin-top: 20px;
     }
+    .steps h5 {
+        text-align: center;
+    }
 }
 
 
@@ -827,7 +830,6 @@ ul li a:hover, ul li a.active {
     flex-direction: column;
     justify-content: center;
 }
-
 
 
 
