@@ -751,6 +751,7 @@ ul li a:hover, ul li a.active {
 }
 .project-intro h4 {
     font-weight: var(--font-weight-regular);
+    text-align: center;
 }
 .project-intro h3 {
     font-weight: var(--font-weight-regular);
@@ -814,9 +815,12 @@ ul li a:hover, ul li a.active {
         margin-top: 20px;
     }
     .steps h5 {
-        text-align: center;
+        text-align: center !important;
     }
 }
+
+
+
 
 
 
@@ -835,26 +839,26 @@ ul li a:hover, ul li a.active {
 
 
 
-.mockup_content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.mockup  {
-    max-height: 700px;
-    width: 100%;
-}
-.mockup img{
-    border-radius: 10px;
-    max-height: 700px;
-    width: 100%;
-    object-fit: cover;
-}
 
 
 
 
 
-.project_content .introduction h4 {
-    color: var(--color-text-default-dark);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
