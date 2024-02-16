@@ -539,8 +539,11 @@ ul li a:hover, ul li a.active {
 /* Media queries */
 
 @media (max-width:768px) {
-    h2, h5 {
+    h2 {
         text-align: center;
+    }
+    h5 {
+        text-align: left;
     }
     ul {
         display: none;
