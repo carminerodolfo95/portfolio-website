@@ -16,7 +16,7 @@
 <body>
 
     <div id="header" class="fixed-top container-fluid">
-    <header class="header2 container-xl">
+    <header class="header2 px-sm-5">
         <div class="logo">
             <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
         </div>
@@ -28,13 +28,16 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="index.html" class="active">About</a>
+                    <a href="index.html#home">About</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -59,14 +62,194 @@
         </div>
     -->
 
-    <section class="section" id="about">
+    <section class="section" id="home">
 
-        <div class="container-xl hero">
+        <div class="container-fluid hero px-sm-5">
             <h1>WEB<br>DESIGNER</h1>
             <div class="scroll-hero">
-            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/718adf39-2f66-4d93-bf20-757def4db4c1/QZ3QDMa60u.json" background="transparent" speed="1" style="width: 100px; height: 100px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/718adf39-2f66-4d93-bf20-757def4db4c1/QZ3QDMa60u.json" background="transparent" speed="1" style="width: 200px; height: 200px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
             </div>
         </div>
+
+    </section>
+    
+    <section class="section pb-5" id="about">
+
+    <div class="container-xl about">
+        <div class="item item-1">
+            <img src="images/aboutME.png" style="max-width:200px">
+        </div>
+        <div class="item item-2">
+            <h4>Tools</h4>
+            <div class="tools">
+                <div class="tool"><i class="fa-brands fa-html5 fa-2x"></i></div>
+                <div class="tool"><i class="fa-brands fa-css3-alt fa-2x"></i></div>
+                <div class="tool"><i class="fa-brands fa-bootstrap fa-2x"></i></div>
+                <div class="tool"><i class="fa-brands fa-js fa-2x"></i></div>
+                <div class="tool"><i class="fa-brands fa-figma fa-2x"></i></div>
+            </div>
+        </div>
+        <div class="item item-3">
+            <div class="year">
+                <h3>2019</h3>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-graduation-cap fa-2x" style="color: #0d1b1e;; margin-bottom: 20px"></i>
+                <p>Laurea triennale</p>
+                <h6>Economia e Management</h6>
+            </div>
+        </div>
+        <div class="item item-4">
+            <a hrf="#">Download CV</a>
+        </div>
+        <div class="item item-5">
+            <h2>ABOUT ME</h2>
+        </div>
+        <div class="item item-6">
+            <div class="year">
+                <h3>2022</h3>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-graduation-cap fa-2x" style="color:#0d1b1e; margin-bottom: 20px"></i>
+                <p>Laurea magistrale</p>
+                <h6>Teoria e Tecnologia della Comunicazione</h6>
+            </div>
+        </div>
+        <div class="item item-7">
+            <i class="fa-solid fa-location-dot fa-4x" style="color:#EF8354; margin-bottom: 20px;"></i>
+            <h4>Amorosi, BN, Italia</h4>
+        </div>
+        <div class="item item-8">
+            <div class="year">
+                <h3>2024</h3>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-spinner fa-2x" style="color:#0d1b1e; margin-bottom: 20px;"></i>
+                <h5>Freelance</h5>
+                <h6>Web Designer</h6>
+            </div>
+        </div>
+    </div> 
+    </section>
+
+    <section class="section py-5 px-sm-5" id="services">
+        <div class="title-section">
+            <h1>SERVICES</h1>
+        </div>
+        <ul class="accordion container-xl py-5">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">BRANDING</label>
+                <div class="content">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">GRAPHIC DESIGN</label>
+                <div class="content">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">WIREFRAMING</label>
+                <div class="content">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">PROTOTYPING</label>
+                <div class="content">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fifth">
+                <label for="fifth">FRONT END DEVELOPMENT</label>
+                <div class="content">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </li>
+        </ul>
+        </section>
+
+    <section class="section py-5 px-sm-5" id="portfolio">
+        <div class="title-section">
+            <h1>PORTFOLIO</h1>
+        </div>
+        <div class="container-xl">
+        <div class="row row-cols-1 row-cols-lg-2 g-4 my-5">
+            <div class="col my-2">
+              <a href="orizon.html"><div class="card">
+                <img src="images/Light banner_3000.jpg" class="card-img-top" alt="orizon">
+                <div class="card-body">
+                    <div class="project-home">
+                      <h5 class="card-title">Orizon</h5>
+                      <p class="card-text">#Branding</p>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right fa-1x" style="color:#f2f2f2; rotate:-45deg"></i>
+                    </div>
+                  </div>
+              </div></a>
+            </div>
+            <div class="col my-2">
+              <a href="lse.html"><div class="card">
+                <img src="images/lse.jpg" class="card-img-top" alt="lse">
+                <div class="card-body">
+                  <div class="project-home">
+                    <h5 class="card-title">Latent Space Explorer</h5>
+                    <p class="card-text">#Website</p>
+                  </div>
+                  <div class="arrow">
+                    <i class="fa-solid fa-arrow-right fa-1x" style="color:#f2f2f2; rotate:-45deg"></i>
+                  </div>
+                </div>
+              </div></a>
+            </div>
+            <div class="col my-2">
+              <a><div class="card">
+                <img src="images/body.jpg" class="card-img-top" alt="social media Santoro">
+                <div class="card-body">
+                    <div class="project-home">
+                      <h5 class="card-title">Dott.ssa Santoro</h5>
+                      <p class="card-text">#Social Media Graphics</p>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right fa-1x" style="color:#f2f2f2; rotate:-45deg"></i>
+                    </div>
+                  </div>
+              </div></a>
+            </div>
+            <div class="col my-2">
+              <a><div class="card">
+                <img src="images/banner.jpg" class="card-img-top" alt="banner Santoro">
+                <div class="card-body">
+                    <div class="project-home">
+                      <h5 class="card-title">Dott.ssa Santoro</h5>
+                      <p class="card-text">#Banner</p>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right fa-1x" style="color:#f2f2f2; rotate:-45deg"></i>
+                    </div>
+                  </div>
+              </div></a>
+            </div>
+          </div>
+          </div>
+          </section>
+
+
+
+        
+
+          
+            
+
+
+          <!--
 
         <div class="container-xl about">
             <div class="item item-1">
@@ -124,6 +307,9 @@
             </div>
         </div> 
 
+    
+
+
         <div class="services_content container-xl">
             <div class="introduction">
                 <h4>SERVIZI</h4>
@@ -146,53 +332,7 @@
         </div>
     </section>
 
-    <section class="section" id="work">
-        <div class="introduction container-xl">
-            <h4>ULTIMI PROGETTI</h4>
-        </div>
-        <div class="container-xl projects">
-            <a href="orizon.html" target="_blank"><div class="project">
-                <div class="image">
-                    <img src="images/Light banner_3000.jpg">
-                </div>
-                <div class="description">
-                    <div class="text"><h4>Orizon</h4><h5>#Branding</h5></div>
-                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
-                </div>
-            </div></a>
-            <a href="lse.html" target="_blank"><div class="project">
-                <div class="image">
-                    <img src="images/lse.jpg">
-                </div>
-                <div class="description">
-                    <div class="text"><h4>Latent Space Explorer</h4><h5>#Website</h5></div>
-                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
-                </div>
-            </div></a>
-            <a><div class="project">
-                <div class="image">
-                    <img src="images/body.jpg">
-                </div>
-                <div class="description">
-                    <div class="text"><h4>Dott.ssa Santoro</h4><h5>#Social Media</h5></div>
-                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
-                </div>
-            </div></a>
-            <a><div class="project">
-                <div class="image">
-                    <img src="images/banner.jpg">
-                </div>
-                <div class="description">
-                    <div class="text"><h4>Dott.ssa Santoro</h4><h5>#Banner</h5></div>
-                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
-                </div>
-            </div></a>
-        </div>
-        <div class="container-xl container-button">
-            <a href="portfolio.html"><button class="secondary">Portfolio</button></a>
-        </div>
-    </section>
-
+-->
 
     <section class="section" id="contact">
         <div class="contact container-xl py-5">
@@ -234,6 +374,13 @@
         hamburger.onclick = function() {
             navBar = document.querySelector(".nav-bar");
             navBar.classList.toggle("active");
+        }
+
+        const accordion = document.getElementsByClassName('service');
+        for (i=0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
         }
     </script>
     <script src="https://kit.fontawesome.com/595d534f10.js" crossorigin="anonymous"></script>
