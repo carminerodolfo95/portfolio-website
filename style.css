@@ -1200,6 +1200,9 @@ input[type="checkbox"]:checked ~ .accordion-content {
     .work:hover img {
         transform: none !important;
     }
+    .work h2 {
+        font-size: 3rem !important;
+    }
 }
 
 
