@@ -429,6 +429,10 @@ button:focus{
     align-items: center;
 }
 
+.download a {
+    color: var(--color-text-default-dark);
+}
+
 .download a:hover {
     color: var(--color-text-special) !important;
 }
@@ -538,7 +542,7 @@ input[type="checkbox"]:checked ~ label {
 input[type="checkbox"] ~ .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 input[type="checkbox"]:checked ~ .accordion-content {
