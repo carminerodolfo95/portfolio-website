@@ -22,7 +22,7 @@
     --fs-lg: clamp(1.56rem, 1.76vw + 1.21rem, 2.62rem);
     --fs-xl: clamp(1.95rem, 3.8vw + 1.19rem, 4.24rem);
     --fs-xxl: clamp(2.44rem, 7.35vw + 0.97rem, 6.85rem);
-    --fs-xxxl: clamp(3.05rem, 13.4vw + 0.37rem, 11.09rem);
+    --fs-xxxl: clamp(3.05rem, 15.4vw + 0.37rem, 15.09rem);
 }
 
 /* Set font size and line height */
@@ -330,11 +330,11 @@ button:focus{
 .about {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.25fr 0.25fr 0.5fr;
     grid-template-areas:
     "school download download download city"
     "school tools tools tools jobs"
-    "school tools tools tools jobs"
+    "master tools tools tools jobs"
     "master hobby1 hobby2 hobby3 jobs";
     gap: 20px;
     margin: 50px auto;
@@ -427,6 +427,10 @@ button:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.download a:hover {
+    color: var(--color-text-special) !important;
 }
 
 .hobby1 {
