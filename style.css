@@ -98,7 +98,7 @@ ul, li {
 
 /* Set core root defaults */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 /* Make images easier to work with */
@@ -599,6 +599,10 @@ input[type="checkbox"]:checked ~ .accordion-content {
 
 /* --------------------------------CONTACT----------------------------------- */
 
+#contact {
+    background-color: var(--color-background-dark);
+}
+
 .light {
     color: var(--color-text-default-light);
     font-family: "Anton", sans-serif;
@@ -657,6 +661,9 @@ input[type="checkbox"]:checked ~ .accordion-content {
 /* --------------------------------CONTACT----------------------------------- */
 
 /* --------------------------------FOOTER----------------------------------- */
+#footer {
+    background-color: var(--color-background-dark);
+}
 
 .footer_content {
     display: flex;
@@ -791,6 +798,7 @@ input[type="checkbox"]:checked ~ .accordion-content {
 }
 .project_content h1 {
     color: var(--color-text-default-dark) !important;
+    z-index: 2;
 }
 .project_content p {
     color: var(--color-text-default-dark);
@@ -798,7 +806,6 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .project_content a {
     text-decoration: underline;
     text-decoration-color: var(--color-background-dark);
-    ;
 }
 .project-hero {
     padding: 100px 0;
@@ -815,14 +822,19 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .project-intro h5 {
     color: var(--color-accent);
 }
-.project-intro h4 {
+.project-intro h6 {
     font-weight: var(--font-weight-regular);
     text-align: center;
+    color: var(--color-text-default-light);
+
 }
 .project-intro h3 {
     font-weight: var(--font-weight-regular);
 }
 .project-image {
+    position: relative;
+    z-index: 1;
+    bottom: 50px;
     max-height: 600px;
     width: 100%;
 }
@@ -853,6 +865,18 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .comment {
     grid-area: comment;
 }
+.comment h6 {
+    color: var(--color-text-default-dark);
+    text-align: left;
+}
+.comment a {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+}
+.comment a:hover {
+    color: var(--color-accent) !important;
+    opacity: 0.8;
+}
 .year-info, .product-info, .industry-info, .comment {
     display: flex;
     flex-direction: column;
@@ -864,8 +888,15 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .year-info, .product-info, .industry-info {
     background-color: var(--color-background-dark);
     align-items:center;
-
 }
+
+.steps_content {
+    background-color: var(--color-background-dark);
+}
+.steps_content h2 {
+    color: var(--color-text-default-light);
+}
+
 @media (max-width:768px) {
     .project-description {
         grid-template-columns: 1fr;
@@ -892,8 +923,84 @@ input[type="checkbox"]:checked ~ .accordion-content {
 
 
 
+.mockup-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: first baseline;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+
+.mockup-image img {
+    border-radius: 10px;
+}
 
 
 
 
+
+.mockup {
+    padding: 100px 0;
+    background-color: var(--color-background-light);
+}
+.mockup-image2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+    max-width: 600px;
+}
+.mockup-image2 img {
+    border-radius: 10px;
+}
+
+
+#portfolio-project {
+    background-color: var(--color-background-light);
+    padding-bottom: 100px !important;
+}
+#portfolio-project h2 {
+    color: var(--color-text-default-dark);
+    z-index: 2;
+}
+.more-projects {
+    display: flex;
+    flex-direction: column;
+}
+.more-projects h2 {
+    line-height: 1 !important;
+}
+.projects {
+    position: relative;
+    bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+.projects img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.projects h6 {
+    text-align: center;
+}
+.projects a:hover {
+    h6 {
+        color: var(--color-text-default-dark);
+    }
+}
+
+@media (max-width:768px) {
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
 
