@@ -887,7 +887,7 @@ input[type="checkbox"]:checked ~ .accordion-content {
 }
 .year-info, .product-info, .industry-info {
     background-color: var(--color-background-dark);
-    align-items:center;
+    align-items: center;
 }
 
 .steps_content {
@@ -913,6 +913,17 @@ input[type="checkbox"]:checked ~ .accordion-content {
     }
     .steps h5 {
         text-align: center !important;
+    }
+    .year-info, .product-info, .industry-info {
+    justify-content: center;
+    }
+    .comment {
+        padding: 0;
+        padding-top: 20px;
+    }
+    .comment a {
+        padding-top: 20px;
+        margin: 0 auto;
     }
 }
 
@@ -948,7 +959,7 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .mockup-image2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 40px;
     max-width: 600px;
 }
@@ -977,7 +988,7 @@ input[type="checkbox"]:checked ~ .accordion-content {
     bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr ;
     gap: 20px;
     width: 100%;
 }
@@ -1002,5 +1013,6 @@ input[type="checkbox"]:checked ~ .accordion-content {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    
 }
 
