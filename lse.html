@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tagliafierro Portfolio | Orizon</title>
+    <title>Tagliafierro Portfolio | Latent Space Explorer</title>
     <link rel="icon" type="image/x-icon" href="images/memoji.png">
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,64 +15,58 @@
 
 <body>
 
-    <div id="header" class="fixed-top container-fluid">
-        <header class="header2 container-xl">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
-            </div>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav class="nav-bar">
-                <ul>
-                    <li>
-                        <a href="index.html">About</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Works</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" style="width:80px">
+        </a>
+        <ul class="navbar">
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Work</a></li>
+        </ul>
+        <div class="contact-button">
+            <a href="#contact" class="contact">Contact</a>
         </div>
+    </header>
 
-    <section class="project_content pb-5">
+    <section class="project_content container-fluid">
+
         <div class="container-xl project-hero">
-            <h1>Latent Space Explorer</h1>
-        </div>
-        <div class="project-intro container-xl">
-            <div class="project-image">
+            <h1>LATENT SPACE EXPLORER</h1>
+            <div class="project-image">                
                 <img src="images/lse.jpg">
             </div>
+            
+            <div class="project-intro container-xl">
+
             <div class="project-description">
                 <div class="year-info">
-                    <h5>Anno</h5>
-                    <h4>2022</h4>
+                    <h6>Anno</h6>
+                    <h5>2022</h5>
                 </div>
                 <div class="product-info">
-                    <h5>Prodotto</h5>
-                    <h4>Website</h4>
+                    <h6>Prodotto</h6>
+                    <h5>Website</h5>
                 </div>
                 <div class="industry-info">
-                    <h5>Settore</h5>
-                    <h4>Analisi dei dati</h4>
+                    <h6>Settore</h6>
+                    <h5>Science</h5>
                 </div>
                 <div class="comment">
-                    <h5>Descrizione</h5>
-                    <p>Nell'ambito del progetto NEANIAS è stata sviluppata un'applicazione chiamata LSE, 
+                    <h6>Nell'ambito del progetto NEANIAS è stata sviluppata un'applicazione chiamata LSE, 
                         in grado di supportare la ricerca tramite analisi semi-automatizzate sfruttando 
                         tecniche di deep learning, data visualization e clustering. Sulla base di quanto emerso dal
-                        test di usabilità, ha avuto inizio la fase di riprogettazione dell'interfaccia del nuovo sito.</p>
+                        test di usabilità, ha avuto inizio la fase di riprogettazione dell'interfaccia del nuovo sito.</h6>
                 </div>
+            </div>
             </div>
         </div>
 
-        <div class="steps container-xl pt-5">
+    </section>
+
+    <section class="steps_content container-fluid py-5">
+
+        <div class="steps container-xl">
             <div class="step">
                 <h2>USER RESEARCH</h2>
             </div>
@@ -84,72 +78,69 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="mockup container-fluid">
+        <div class="mockup-image2 container-xl">
+            <img src="images/mockupLSE.png">
+            <img src="images/homepage2LSE.png">
+            <img src="images/experiments.png">
+            <img src="images/WIREFRAMES-LSE.png">
+        </div>
+    </section>
+
+    <section class="section container-fluid py-5" id="portfolio-project">
+
+        <div class="container-xl more-projects">
+            <h2>ALTRI<br>PROGETTI</h2>
+            <div class="projects">
+                <a href="orizon.html">
+                    <img src="images/Folder and Brochures Free Mockup.jpg"/>
+                    <h6>ORIZON</h6>
+                </a> 
+                <a>
+                    <img src="images/body.jpg"/>
+                    <h6>DOTT.SSA SANTORO</h6>
+                </a> 
+                <a>
+                    <img src="images/banner.jpg"/>
+                    <h6>DOTT.SSA SANTORO</h6>
+                </a> 
+            </div>
+        </div>
+
+    </section>
+
         
 
-        <div class="introduction container-xl">
-            <h4>ALTRI PROGETTI</h4>
-        </div>
-        <div class="container-xl projects">
-            <a href="orizon.html" target="_blank"><div class="project">
-                <div class="image">
-                    <img src="images/Light banner_3000.jpg">
-                </div>
-                <div class="description">
-                    <div class="text"><h4>Orizon</h4><h5>#Branding</h5></div>
-                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
-                </div>
-            </div></a>
-            <a><div class="project special">
-                <div class="image">
-                    <img src="images/body.jpg">
-                </div>
-                <div class="description">
-                    <div class="text"><h4>Dott.ssa Santoro</h4><h5>#Social Media</h5></div>
-                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
-                </div>
-            </div></a>
-            <a><div class="project special">
-                <div class="image">
-                    <img src="images/banner.jpg">
-                </div>
-                <div class="description">
-                    <div class="text"><h4>Dott.ssa Santoro</h4><h5>#Banner</h5></div>
-                    <div class="arrow"><i class="fa-solid fa-arrow-right fa-2x" style="color:#EF8354; rotate:-45deg"></i></div>
-                </div>
-            </div></a>
-        </div>
-    </section>
+    <section class="section py-5" id="contact">
 
-    <section class="section" id="contact">
-        <div class="contact container-xl py-5">
-            <h1>Insieme<span class="light"> possiamo creare qualcosa di straordinario.</span></h1>
-            <div class="contact_form">
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                    <div class="field"><input type="hidden" name="access_key" value="8f948b30-b9de-4432-b879-c96880f9bb8c">
+        <div class="contact-section container-xl py-5">
+
+            <h1>CREA<span class="light"> IL TUO NUOVO SITO</span></h1>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="field"><input type="hidden" name="access_key" value="8f948b30-b9de-4432-b879-c96880f9bb8c">
                     <input type="text" name="name" placeholder="Il tuo nome" class="contact-inputs" required></input>
                     <input type="email" name="email" placeholder="La tua email" class="contact-inputs" required></input>
-                    <textarea name="message" placeholder="Messaggio" class="contact-inputs" required></textarea></div>
-                    <div><button class="maxi-button" type="submit">Invia</button></div>
-                </form>
-            </div>
+                    <textarea name="message" placeholder="Messaggio" class="contact-inputs" required></textarea>
+                    <button classtype="submit" class="contact-inputs send">Invia</button>
+                </div>
+            </form>
         </div>
+    </section>  
 
-        <div class="footer container-xl">
-        <div class="social-group">
-            <div class="social">
-                <a href="#"><h4>Instagram</h4></a>
+    <section id="footer" class="py-2">
+        <div class="footer_content container-xl">
+            <div class="privacy">
+                <a>Privacy Policy</a>
             </div>
-            <div class="social">
-                <a href="#"><h4>Linkedin</h4></a>
+            <div class="instagram">
+                <a href="https://www.instagram.com/carmine.tagliafierro?igsh=MWt1cncyd3hnbTNqcg%3D%3D&utm_source=qr">Instagram</a>
             </div>
-            <div class="social">
-                <a href="#"><h4>Github</h4></a>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/carmine-rodolfo-tagliafierro-878b7b248">Linkedin</a>
             </div>
-        </div>
-        <div class="privacy">
-            <p>Progettato e sviluppato da Carmine Rodolfo Tagliafierro</p>
-            <p>© 2024 All rights reserved</p>
-        </div>
         </div>
     </section>
 
@@ -159,14 +150,7 @@
 
 
 
-
-    <script>
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function() {
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
-    </script>
+    
     <script src="https://kit.fontawesome.com/595d534f10.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
