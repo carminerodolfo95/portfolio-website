@@ -885,6 +885,9 @@ input[type="checkbox"]:checked ~ .accordion-content {
     border-radius: 10px;
     padding: 20px;
 }
+.product-info h5 {
+    text-align: center;
+}
 .year-info, .product-info, .industry-info {
     background-color: var(--color-background-dark);
     align-items: center;
@@ -935,14 +938,12 @@ input[type="checkbox"]:checked ~ .accordion-content {
 
 
 .mockup-images {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: first baseline;
-    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
     gap: 40px;
+    max-width: 600px;
 }
-
 
 .mockup-image img {
     border-radius: 10px;
@@ -988,7 +989,7 @@ input[type="checkbox"]:checked ~ .accordion-content {
     bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     gap: 20px;
     width: 100%;
 }
@@ -998,6 +999,9 @@ input[type="checkbox"]:checked ~ .accordion-content {
     height: 250px;
     width: 100%;
     object-fit: cover;
+}
+.projects a {
+    color: var(--color-text-default-dark);
 }
 .projects h6 {
     text-align: center;
