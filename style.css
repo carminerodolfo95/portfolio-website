@@ -136,7 +136,7 @@ button:focus{
 
 /* --------------------------------HEADER----------------------------------- */
 
-#header {
+#header, #header-project {
     position: fixed;
     width: max-content;
     bottom: 7vh;
@@ -206,6 +206,14 @@ button:focus{
 
 .contact-button a:hover {
     text-decoration: none;
+}
+
+.navbar-project {
+    display: none;
+}
+
+#header-project {
+    padding: 5px;
 }
 
 /* --------------------------------HEADER----------------------------------- */
@@ -739,6 +747,9 @@ input[type="checkbox"]:checked ~ .accordion-content {
     .privacy {
         text-align: center;
     }
+    .item_content {
+        gap: 0;
+    }
 }
 
 @media (min-width:768px) and (max-width:992px) {
@@ -766,32 +777,8 @@ input[type="checkbox"]:checked ~ .accordion-content {
 
 
 
+/* --------------------------------PROJECT-PAGE----------------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.special h4 {
-    color: var(--color-text-default-dark);
-}
 
 .project_content {
     background-color: var(--color-background-light);
@@ -826,7 +813,6 @@ input[type="checkbox"]:checked ~ .accordion-content {
     font-weight: var(--font-weight-regular);
     text-align: center;
     color: var(--color-text-default-light);
-
 }
 .project-intro h3 {
     font-weight: var(--font-weight-regular);
@@ -900,43 +886,6 @@ input[type="checkbox"]:checked ~ .accordion-content {
     color: var(--color-text-default-light);
 }
 
-@media (max-width:768px) {
-    .project-description {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 2fr;
-        grid-template-areas:
-        "year"
-        "product"
-        "industry"
-        "comment";
-        gap: 20px;
-    }
-    .project-description {
-        margin-top: 20px;
-    }
-    .steps h5 {
-        text-align: center !important;
-    }
-    .year-info, .product-info, .industry-info {
-    justify-content: center;
-    }
-    .comment {
-        padding: 0;
-        padding-top: 20px;
-    }
-    .comment a {
-        padding-top: 20px;
-        margin: 0 auto;
-    }
-}
-
-
-
-
-
-
-
-
 .mockup-images {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -948,10 +897,6 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .mockup-image img {
     border-radius: 10px;
 }
-
-
-
-
 
 .mockup {
     padding: 100px 0;
@@ -967,7 +912,6 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .mockup-image2 img {
     border-radius: 10px;
 }
-
 
 #portfolio-project {
     background-color: var(--color-background-light);
@@ -1003,6 +947,10 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .projects a {
     color: var(--color-text-default-dark);
 }
+.projects a:hover {
+    color: var(--color-text-default-dark) !important;
+    text-decoration: none;
+}
 .projects h6 {
     text-align: center;
 }
@@ -1017,6 +965,33 @@ input[type="checkbox"]:checked ~ .accordion-content {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    
+    .project-description {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 2fr;
+        grid-template-areas:
+        "year"
+        "product"
+        "industry"
+        "comment";
+        gap: 20px;
+    }
+    .project-description {
+        margin-top: 20px;
+    }
+    .steps h5 {
+        text-align: center !important;
+    }
+    .year-info, .product-info, .industry-info {
+    justify-content: center;
+    }
+    .comment {
+        padding: 0;
+        padding-top: 20px;
+    }
+    .comment a {
+        padding-top: 20px;
+        margin: 0 auto;
+    }
 }
+
 
