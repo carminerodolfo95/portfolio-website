@@ -613,6 +613,10 @@ input[type="checkbox"]:checked ~ .accordion-content {
     background-color: var(--color-background-dark);
 }
 
+#contact h2 {
+    color: var(--color-accent);
+}
+
 .light {
     color: var(--color-text-default-light);
     font-family: "Anton", sans-serif;
