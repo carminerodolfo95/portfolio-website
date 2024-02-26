@@ -1,0 +1,109 @@
+/* CSS Custom Properties */
+:root 
+{
+    --font-family: 'Poppins', sans-serif;
+    --font-family-alt: 'Anton', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    
+    --color-background-light: #f2f2f2;
+    --color-background-dark: #0d1b1e;
+    --color-background-special: #e7e7e7;
+    --color-accent: #EF8354;
+    --color-text-default-light: #f2f2f2;
+    --color-text-default-dark: #0d1b1e;
+    --color-text-special: #afafaf;
+
+    --fs-sm: clamp(0.8rem, -0.3vw + 0.86rem, 0.62rem);
+    --fs-base: clamp(1rem, 0vw + 1rem, 1rem);
+    --fs-md: clamp(1.25rem, 0.61vw + 1.13rem, 1.62rem);
+    --fs-lg: clamp(1.56rem, 1.76vw + 1.21rem, 2.62rem);
+    --fs-xl: clamp(1.95rem, 3.8vw + 1.19rem, 4.24rem);
+    --fs-xxl: clamp(2.44rem, 7.35vw + 0.97rem, 6.85rem);
+    --fs-xxxl: clamp(3.05rem, 15.4vw + 0.37rem, 15.09rem);
+}
+
+.cv-file {
+    background-color: var(--color-background-light);
+}
+.cv-steps {
+    margin-bottom: 100px;
+    background-color: var(--color-background-light) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.cv-step {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cv-steps h4 {
+    color: var(--color-text-default-dark);
+    margin-bottom: 40px;
+}
+
+.cv-step h5 .orange {
+    color: var(--color-accent);
+}
+
+.cv-step h5 {
+    font-family: var(--font-family);
+    margin-bottom: 0;
+}
+
+.cv-work {
+    background-color: var(--color-background-special);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cv-year {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-default-light);
+    max-width: fit-content !important;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.cv-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.cv-pc, .cv-language {
+    background-color: var(--color-background-dark);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cv-pc h4, .cv-language h4, .cv-info p, .cv-language p {
+    color: var(--color-text-default-light);
+}
+
+.cv-download {
+    text-align: center;
+}
+.cv-download a {
+    font-size: var(--fs-md);
+    color: var(--color-text-default-dark);
+    font-weight: var(--font-weight-medium);
+}
+.cv-download a:hover {
+    color: var(--color-text-default-dark) !important;
+}
+
+@media (max-width:768px) {
+    .cv-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+    }
+}
